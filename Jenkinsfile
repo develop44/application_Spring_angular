@@ -28,12 +28,12 @@ pipeline {
             steps {
                 withDockerRegistry(credentialsId: 'docker-nesrine', url: "") {
                     // Construire l'image Docker pour le backend
-                    sh 'docker build -t nesrine419/backend -f ./Dockerfile2 Authentifcation_Verif_Email'
-                    sh 'docker push nesrine419/backend'
+                    sh 'docker build -t nesrine419/backend2 -f ./Dockerfile2 Authentifcation_Verif_Email'
+                    sh 'docker push nesrine419/backend2'
 
                      //Construire l'image Docker pour le frontend
-                     sh 'docker build --no-cache -t nesrine419/frontend -f ./Dockerfile1 frontend-application'
-                     sh 'docker push nesrine419/frontend'
+                     sh 'docker build --no-cache -t nesrine419/frontend2 -f ./Dockerfile1 frontend-application'
+                     sh 'docker push nesrine419/frontend2'
                 }
             }
         }

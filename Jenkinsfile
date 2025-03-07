@@ -67,7 +67,11 @@ stage('Display Kubernetes Resources') {
         }
     }
 }
-
+    stage('Success') {
+            steps {
+                echo 'Pipeline executed successfully!'
+            }
+        }
        
     }
 }

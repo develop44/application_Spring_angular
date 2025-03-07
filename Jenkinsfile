@@ -31,9 +31,9 @@ pipeline {
                     sh 'docker build -t nesrine419/backend -f ./Dockerfile2 Authentifcation_Verif_Email'
                     sh 'docker push nesrine419/backend'
 
-                    // Construire l'image Docker pour le frontend
-                    // sh 'docker build --no-cache -t nesrine419/frontend -f ./Dockerfile1 frontend-application'
-                    // sh 'docker push nesrine419/frontend'
+                     Construire l'image Docker pour le frontend
+                     sh 'docker build --no-cache -t nesrine419/frontend -f ./Dockerfile1 frontend-application'
+                     sh 'docker push nesrine419/frontend'
                 }
             }
         }

@@ -32,8 +32,8 @@ pipeline {
                     sh 'docker push nesrine419/backend2'
 
                      //Construire l'image Docker pour le frontend
-                     sh 'docker build --no-cache -t nesrine419/frontend2 -f ./Dockerfile1 frontend-application'
-                     sh 'docker push nesrine419/frontend2'
+                //     sh 'docker build --no-cache -t nesrine419/frontend2 -f ./Dockerfile1 frontend-application'
+                  //   sh 'docker push nesrine419/frontend2'
                 }
             }
         }
